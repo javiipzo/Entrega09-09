@@ -3,8 +3,11 @@ from vehiculo import Vehiculo
 from Camioneta import camioneta
 from Bicicleta import Bicicleta
 from Motocicleta import Motocicleta
-def catalogar():
-    
+def catalogar(lista):
+    for x in lista:
+        print(x)
+
+
 
 
 
@@ -15,3 +18,4 @@ ca= camioneta("rojo", 6, 88, 1000, 2000)
 b= Bicicleta("rosa", 2, "urbana")
 m= Motocicleta("Negra",3, "deportiva",180, 1400)
 vehiculos=[c,ca,b,m]
+catalogar(vehiculos)

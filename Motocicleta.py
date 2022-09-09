@@ -5,3 +5,5 @@ class Motocicleta(Bicicleta):
         super().__init__(color, ruedas, tipo)
         self.velocidad=velocidad
         self.cilindrada=cilindrada
+    def __str__(self):
+        return Vehiculo.__str__(self) + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
