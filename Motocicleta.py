@@ -6,4 +6,5 @@ class Motocicleta(Bicicleta):
         self.velocidad=velocidad
         self.cilindrada=cilindrada
     def __str__(self):
-        return Vehiculo.__str__(self) + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
+        texto="Motocicleta, color: {}, de {} ruedas, tipo {} y de velocidad: {} km/h, y cilindrada: {}"
+        return texto.format(self.color,self.ruedas,self.tipo,self.velocidad,self.cilindrada)

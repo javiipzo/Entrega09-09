@@ -5,4 +5,5 @@ class Bicicleta(Vehiculo):
         self.tipo=tipo
 
     def __str__(self):
-        return Vehiculo.__str__(self) + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
+        texto="Bicicleta, color: {}, de {} ruedas y tipo {}"
+        return texto.format(self.color,self.ruedas,self.tipo)
